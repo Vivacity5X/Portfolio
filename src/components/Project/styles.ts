@@ -83,6 +83,18 @@ export const Container = styled.section`
         }
       }
 
+      .project-description {
+        color: var(--text-secondary);
+        line-height: 1.7;
+        letter-spacing: 0.05rem;
+        margin: 0 0 2rem;
+        padding-left: 2rem;
+
+        li {
+          margin-bottom: 1rem;
+        }
+      }
+
       footer {
         margin-top: auto;
 

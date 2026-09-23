@@ -1,18 +1,4 @@
 import { Container } from "./styles";
-import python from "../../assets/python.svg"
-import wordpress from "../../assets/wordpress.svg";
-import shopify from "../../assets/shopify.svg";
-import htmlIcon from "../../assets/html-icon.svg";
-import cssIcon from "../../assets/css-icon.svg";
-import jsIcon from "../../assets/js-icon.svg";
-import nodeIcon from "../../assets/node-icon.svg";
-import reactIcon from "../../assets/react-icon.svg";
-import typescriptIcon from "../../assets/typescript-icon.svg";
-import vueIcon from "../../assets/vue-icon.svg";
-import boostrapIcon from "../../assets/bootstrap-icon.svg";
-import mysqlIcon from "../../assets/mysql-icon.svg";
-import sassIcon from "../../assets/sass-icon.svg";
-import vscodeIcon from "../../assets/vscode-icon.svg";
 import ScrollAnimation from "../ScrollAnimation/ScrollAnimation";
 
 export function About() {
@@ -66,66 +52,11 @@ enterprise development workflows.</p>
           <h3>Here are my main skills:</h3>
         </ScrollAnimation>
         <div className="hard-skills">
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.10 * 1000}>
-              <img src={python} alt="python" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.11 * 1000}>
-              <img src={typescriptIcon} alt="Typescript" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.12 * 1000}>
-              <img src={jsIcon} alt="JavaScript" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.13 * 1000}>
-              <img src={reactIcon} alt="React" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.14 * 1000}>
-              <img src={nodeIcon} alt="Node.js" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.15 * 1000}>
-              <img src={vueIcon} alt="Vue" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.16 * 1000}>
-              <img src={mysqlIcon} alt="MySQL" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.17 * 1000}>
-              <img src={htmlIcon} alt="Html" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.18 * 1000}>
-              <img src={cssIcon} alt="Css" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.19 * 1000}>
-              <img src={boostrapIcon} alt="Bootstrap" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.20 * 1000}>
-              <img src={wordpress} alt="Wordpress" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.21 * 1000}>
-              <img src={shopify} alt="Shopify" />
-            </ScrollAnimation>
-          </div>
+          <div className="skill-category"><h4>Languages</h4><p>Java, Python (basics), SQL</p></div>
+          <div className="skill-category"><h4>Operating Systems</h4><p>Linux (daily development environment), Windows</p></div>
+          <div className="skill-category"><h4>Backend Development</h4><p>Spring Boot, REST APIs, concurrent systems design</p></div>
+          <div className="skill-category"><h4>Tools</h4><p>Git, GitHub, Docker, Maven</p></div>
+          <div className="skill-category"><h4>Databases</h4><p>MySQL, PostgreSQL</p></div>
         </div>
       </div>
     </Container>

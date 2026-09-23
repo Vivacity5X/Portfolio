@@ -32,41 +32,27 @@ export const Container = styled.section`
 
   .hard-skills {
     margin-top: 2.5rem;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem;
   }
 
-  .hability {
-    width: 90px;
-    height: 90px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+  .skill-category {
+    padding: 1.6rem;
     background: var(--surface);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 16px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
 
-    transition: all 0.3s ease;
-
-    img {
-      width: 3.5rem;
-      margin-bottom: 0.8rem;
-    }
-
-    span {
+    h4 {
       color: var(--text);
-      font-size: 1.3rem;
-      font-weight: 500;
+      font-size: 1.5rem;
+      margin-bottom: 0.7rem;
     }
 
     &:hover {
-      transform: translateY(-6px);
+      transform: translateY(-4px);
       border-color: var(--primary);
-      box-shadow: 0 15px 30px rgba(59, 130, 246, 0.18);
     }
   }
 
@@ -99,10 +85,6 @@ export const Container = styled.section`
     flex-direction: column-reverse;
     text-align: center;
     gap: 4rem;
-
-    .hard-skills {
-      justify-content: center;
-    }
 
     .about-image {
       width: 100%;
@@ -140,17 +122,8 @@ export const Container = styled.section`
       }
     }
 
-    .hability {
-      width: 80px;
-      height: 80px;
-
-      img {
-        width: 3rem;
-      }
-
-      span {
-        font-size: 1.2rem;
-      }
+    .hard-skills {
+      grid-template-columns: 1fr;
     }
   }
 `;
